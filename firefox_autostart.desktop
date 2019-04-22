@@ -1,4 +1,4 @@
 [Desktop Entry]
-Name=Firefox
+Name=Firefox_Autostart
 Exec=firefox http://localhost:8888
 Type=Application
