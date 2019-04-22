@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Firefox
+Exec=firefox http://localhost:8888
+Type=Application
