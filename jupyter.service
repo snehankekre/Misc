@@ -4,7 +4,7 @@ Description=Jupyter Workplace
 [Service]
 Type=simple
 PIDFile=/run/jupyter.pid
-ExecStart=/home/rhyme/anaconda3/bin/jupyter-notebook --config=/home/rhyme/.jupyter/jupyter_notebook_config.json
+ExecStart=/home/rhyme/anaconda3/bin/jupyter-notebook --config=/home/rhyme/.jupyter/jupyter_notebook_config.py
 User=rhyme
 Group=rhyme
 WorkingDirectory=/home/rhyme/Desktop/Project
