@@ -1,9 +1,9 @@
-#!bin/bash
+#!/bin/bash
 
 cd /home/rhyme/Desktop
 wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 chmod +x Anaconda3-2019.10-Linux-x86_64.sh
-./Anaconda3-2019.10-Linux-x86_64.sh #download and install anaconda/jupyter
+./Anaconda3-2019.10-Linux-x86_64.sh -b #download and install anaconda/jupyter
 
 #install packages via conda/pip (optional)
 /home/rhyme/anaconda3/bin/conda install -y numpy pandas matplotlib scikit-learn -c anaconda
@@ -13,7 +13,6 @@ chmod +x Anaconda3-2019.10-Linux-x86_64.sh
 #/home/rhyme/anaconda3/bin/jt -t grade3 -N -T #install theme (optional)
 
 mkdir /home/rhyme/Desktop/Project #Jupyter server will launch here
-
 
 #create Jupyter service (file on my github repo)
 /home/rhyme/anaconda3/bin/jupyter notebook --generate-config
@@ -31,3 +30,5 @@ mkdir /home/rhyme/.config/autostart/
 sudo mv firefox_autostart.desktop /home/rhyme/.config/autostart/ #move to the autostart folder
 
 rm -rf Anaconda3-2019.10-Linux-x86_64.sh
+
+echo "Please, reboot your Cloud Desktop to auto launch Jupyter Notebooks"
